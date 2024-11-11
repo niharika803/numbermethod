@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    // create a function to generate the otp of 6 digits
+        
+        let otp=Math.random()*1000000
+        // console.log(otp)
+        otp1=otp.toFixed(0)
+        console.log(otp1)
+
+    //based on the number create a function to return day of the week
+
+        function vowels(str){
+            if(str=='a'|| str=='e' || str=='i' || str=='o' || str=='u'){
+                return str
+            }
+        }
+        var str=prompt("enter a string")
+        console.log(vowels(str))
+
+
+    //Create a  function to convert 24 hr time to 12hr time
+        var hour=(hr)=>{
+            let today=new Date()
+            console.log(today)
+            console.log(today.getHours()>12?today.getHours()-12:today.getHours())
+            // console.log(time)
+
+        }
+        hour()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
